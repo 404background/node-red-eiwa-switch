@@ -1,0 +1,32 @@
+<script type="text/javascript">
+    RED.nodes.registerType('eiwa-switch',{
+        category: 'Eiwa',
+        color:"#be0b1b",
+        defaults: {
+            name: {value:""},
+            MAC: {type:"password"}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "comment.png",
+        align: "right",
+        label: function() {
+            return this.name||"eiwa-switch";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="eiwa-switch">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-MAC"><i class="fa fa-key"></i> Mac address</label>
+        <input type="password" id="node-input-MAC" placeholder="MAC">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="eiwa-switch">
+    <p>Eiwa Switch</p>
+</script>
