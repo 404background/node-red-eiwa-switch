@@ -4,5 +4,8 @@
         "nodes": {
             "lower-case": "eiwa-switch.js"
         }
+    },
+    "dependencies": {
+        "cronosjs": "1.7.1"
     }
 }
